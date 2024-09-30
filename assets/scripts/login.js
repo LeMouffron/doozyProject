@@ -21,7 +21,7 @@ const registerBtn = document.getElementById('register-btn');
 //? ./en-us: Function to redirect to the main To-Do List interface
 //* ./pt-br: Função para redirecionar para a interface principal do To-Do List
 function redirectToTodoList() {
-  window.location.href = 'todolist.html'; // Redireciona para a página da To-Do List
+  window.location.href = 'todolist.html';
 }
 
 //? ./en-us: Login function
@@ -37,7 +37,7 @@ function login(event) {
   if (user) {
     message.textContent = 'Login bem-sucedido! Redirecionando...';
     message.style.color = 'green';
-    setTimeout(redirectToTodoList, 1000); // Redireciona após 1 segundo
+    setTimeout(redirectToTodoList, 1000); // 1 sec to redirect
   } else {
     message.textContent = 'Email ou senha incorretos!';
     message.style.color = 'red';
@@ -63,10 +63,10 @@ function register() {
     message.style.color = 'red';
   } else {
     users.push({ email, password });
-    localStorage.setItem('users', JSON.stringify(users)); // Armazena o usuário no LocalStorage
+    localStorage.setItem('users', JSON.stringify(users)); // LocalStorage
     message.textContent = 'Cadastro bem-sucedido! Redirecionando...';
     message.style.color = 'green';
-    setTimeout(redirectToTodoList, 1000); // Redireciona após 1 segundo
+    setTimeout(redirectToTodoList, 1000); // 1 sec to redirect
   }
 }
 
