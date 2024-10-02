@@ -1,11 +1,5 @@
 /*! CSS RESET */
 
-/*TODO/ legend languages:=
-    /*? blu.e line comments = English
-    /** comentários de linha verde = Português  */
-/* -------------------------------------------- */
-
-
 *,
 *:before,
 *:after {
@@ -40,6 +34,12 @@
 ::-webkit-search-results-decoration {
   -webkit-box-shadow: none;
 }
+
+/*! - */
+/*TODO/ legend languages:=
+    /*? blu.e line comments = English
+    /** comentários de linha verde = Português  */
+/* -------------------------------------------- */
 
 /*? en-us: remove the underlines in the links*/
 /** pt-br: remove as linhas de baixo nos links */
